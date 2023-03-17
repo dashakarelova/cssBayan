@@ -45,6 +45,11 @@ body{
     margin: 1.25rem auto;
     box-shadow: 0rem 0.3rem 0.7rem 0.1rem #ccc;
 }
+@media (max-width: 500px) {
+    .faq{
+        max-width: 22.5rem;
+    }
+}
 .faq-item{
     position: relative;
     padding: 1.57rem;
@@ -103,7 +108,21 @@ body{
     transition: all .2s ease-in;
 }
 .mem_img{
+    width: 25rem;
+    height: 25rem;
     margin: 0 auto;
+}
+@media (min-width: 300px) {
+    .mem_img{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .faq-img{
+        padding: 0.94rem 0 0 0;
+    }
+    .title{
+        font-size: 1rem;
+    }
 }
 .titl{
     display: flex;
