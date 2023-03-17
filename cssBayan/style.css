@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+ 
+input,button,textarea {font-family: inherit;}
+
+input::-ms-clear{display: none;}
+img{vertical-align: top;}
+
+html,
+body{
+    height: 100%;
+    line-height: 20px;
+    font-size: 20px;
+    color: #717171;
+    font-family: 'Inter', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.body{
+    margin: 0 auto;
+    color: #000;
+}
+.wrapper{
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.title{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.faq{
+    max-width: 500px;
+    color: orange;
+    transition: all 0.3s;
+    margin: 20px auto;
+    box-shadow: 0rem 0.3rem 0.7rem 0.1rem #ccc;
+}
+.faq-item{
+    padding: 25px;
+    border-top: solid 0.1rem #e6e6e6;
+    cursor: pointer;
+}
+.faq:hover ~ .icon{
+    visibility: visible;
+}
+.faq-title{
+    display: block;
+    cursor: pointer;
+}
+.faq:hover{
+    color: #000;
+    transition: 0.9s;
+}
+.faq-input{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.faq-input:checked ~ .faq-img{
+    display: block;
+    transition: all 0.9s;
+}
+.faq-input:checked ~ .titl{
+    color: #000;
+}
+.faq-input:checked~.titl .icon{
+    transform: rotate(45deg);
+    transition: transform .2s ease-in;
+}
+.icon{
+    content: "+";
+    visibility: hidden;
+}
+.faq:hover .icon{
+    visibility: visible;
+}
+.faq-item:hover .icon{
+    transform: rotate(45deg);
+    transition: transform .2s ease-in;
+}
+.faq-img{
+    padding: 25px 25px 0 25px;
+    cursor: pointer;
+    display: none;
+    transition: all .2s ease-in;
+}
+.faq-item:hover .faq-img{
+    display: block;
+    transition: all .2s ease-in;
+}
+.mem_img{
+    margin: 0 auto;
+}
+.titl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
